@@ -47,5 +47,13 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/ferdianarid/react-flagselect.git"
+  },
+  "homepage": "https://github.com/ferdianarid/react-flagselect",
+  "bugs": {
+    "url": "https://github.com/ferdianarid/react-flagselect/issues"
   }
 }
