@@ -1,3 +1,5 @@
+<img src="./preview-package.png" />
+
 ## 🚩 React Flag Select — Country & Phone Input Component
 
 A lightweight and reusable React component for selecting **country**, **flag icons**, and **phone dial codes**.  
@@ -24,6 +26,38 @@ Perfect for registration forms, authentication, checkout pages, and global apps.
 ```bash
 npm install react-flagselect
 ```
+
+### 🚀 Usage
+
+After installing the package you can import the default component (the phone/country input) and render it in your React app. For example:
+
+```tsx
+import React, { useState } from 'react';
+import PhoneInput from 'react-flagselect';
+
+function MyForm() {
+    const [phone, setPhone] = useState<string>('');
+
+    const handlePhoneChange = (value: string): void => {
+        setPhone(value);
+    };
+
+    return (
+        <form>
+            <PhoneInput onChange={handlePhoneChange} value={phone} />
+            <p>Selected value: {phone}</p>
+        </form>
+    );
+}
+
+export default MyForm;
+```
+
+The component accepts an `onChange` callback that receives the full value (dial code
++ number) whenever the country or number changes. You can also pass `value` if you
+need a controlled input.
+
+Feel free to customize the component with your own styles or wrap it in your own UI.
 
 ### Contribution
 This project is written in Typescript and build with Vite.js React and Tailwind CSS
